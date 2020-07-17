@@ -11,7 +11,7 @@ public class phonebonus {
         float totalbonus = pay * bonus / 100;
         long limit = 1000;
         if (bonus > limit) {
-            bonus = 0;
+            bonus = limit;
         }
         System.out.println(totalbonus);
     }
