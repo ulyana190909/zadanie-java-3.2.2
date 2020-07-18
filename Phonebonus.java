@@ -1,19 +1,17 @@
 public class Phonebonus {
     public static void main(String[] args) {
-        boolean accountreplenishment = true;
-        int bonus;
-        if (accountreplenishment) {
-            bonus = 1;
+        long AccountBalance = 300;
+        long RefillAccount = 1200;
+        long TotalAccount = AccountBalance + RefillAccount;
+        long Limit = 1000;
+        double Bonus;
+        if (TotalAccount >= Limit) {
+            Bonus = 0.01;
         } else {
-            bonus = 0;
+            Bonus = 0.00;
         }
-        float pay = 1700;
-        float totalbonus = pay * bonus / 100;
-        long limit = 1000;
-        if (pay > limit) ;
-        {
-            pay = limit;
-        }
-        System.out.println(totalbonus);
+        double TotalBonus = TotalAccount * Bonus;
+        System.out.println(TotalBonus);
+
     }
 }
